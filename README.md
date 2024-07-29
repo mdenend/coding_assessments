@@ -15,9 +15,9 @@ source .venv/bin/activate
 Or for Windows:
 ```
 # In cmd.exe
-venv\Scripts\activate.bat
+.venv\Scripts\activate.bat
 # In PowerShell
-venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 
 Then install the requirements:
@@ -80,4 +80,4 @@ Because I spent a decent amount of time solving this, I think I've (hopefully) g
 - One thing that I think looks a bit silly is the fact that I have two different ways of loading configurations: I use YAML for the coalesce server, and I use .env files for the query servers. Each config has a purpose:
     - The .env file can be used with `flask run`.
     - I used yaml for the actual backend because I wanted to be able to list an arbitrary number of servers. I can't do this easily with an environmental variable unless if it's comma limited like http://localhost:5001,http:localhost:5002,... I just felt like this wasn't very clean so decided against it.
-- Not many comments in this code. I consider it too simple to comment too much in it. Hopefully it's easy to understand :-)
+- Not many comments in this code, I usually comment my functions/methods/classes like I do in `src/strategies.py`, the `default_strategy` function. I tend to at least loosely follow Google's Python style guide: https://google.github.io/styleguide/pyguide.html. I consider this too simple to comment too much. Hopefully it's easy to understand :-)
