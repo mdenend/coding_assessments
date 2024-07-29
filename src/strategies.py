@@ -1,6 +1,7 @@
-# Coalescence strategies
-# These all take the JSON output of n servers
-# and coalesces them based on the strategy listed
+"""Coalescence strategies
+
+These all take the JSON output of n servers and coalesces them based on the strategy provided here
+"""
 from typing import Callable, Dict, List
 
 
