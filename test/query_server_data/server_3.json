@@ -1,0 +1,4 @@
+{
+    "1": {"oop_max": 10000, "remaining_oop_max": 8000, "copay": 1000},
+    "2": {"oop_max": 123123, "remaining_oop_max": 1000, "copay": 1234}
+}
